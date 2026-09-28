@@ -1,0 +1,27 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+
+.app-header { text-align: center; padding: 2rem 1rem 1rem; }
+.app-main { flex: 1; width: 100%; max-width: 42rem; margin: 0 auto; padding: 1rem; }
+
+.hidden { display: none !important; }
+
+.gallery-list { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+.gallery-btn {
+  width: 100%; display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 1.25rem; border-radius: 8px; cursor: pointer; text-align: left;
+}
+
+.toolbar { display: flex; justify-content: space-between; margin-bottom: 1rem; }
+button { padding: 0.4rem 0.8rem; border-radius: 6px; cursor: pointer; }
+.font-sizer { display: flex; gap: 0.25rem; }
+
+.sonnet-card { padding: 2rem; border-radius: 12px; text-align: center; }
+.sonnet-author { margin-bottom: 1.5rem; }
+
+.sonnet-stanzas { display: flex; flex-direction: column; gap: 1.5rem; text-align: left; }
+.stanza { padding: 0.5rem 0.75rem; border-radius: 4px; cursor: pointer; transition: all 0.2s; }
+.stanza-badge { display: inline-block; padding: 0.1rem 0.4rem; border-radius: 4px; margin-bottom: 0.4rem; }
+
+.verse { display: flex; gap: 0.75rem; align-items: baseline; }
+.verse-num { min-width: 1rem; opacity: 0.5; }

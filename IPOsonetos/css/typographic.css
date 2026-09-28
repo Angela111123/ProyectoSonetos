@@ -1,0 +1,23 @@
+/* 2 tipos de letra : Lora e Inter*/
+:root {
+  --ff-poetry: 'Lora', sans-serif;
+  --ff-ui: 'Inter', sans-serif;
+  --scale: 1;
+}
+
+body { font-family: var(--ff-ui); }
+
+.app-header h1 { font-family: var(--ff-poetry); font-size: 2.2rem; }
+.app-header p { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; }
+
+.gallery-title, .sonnet-title { font-family: var(--ff-poetry); font-size: 1.4rem; }
+.sonnet-author { font-family: var(--ff-poetry); font-style: italic; }
+
+.verse {
+  font-family: var(--ff-poetry);
+  font-size: calc(1.15rem * var(--scale));
+  line-height: 1.8;
+}
+
+.stanza-badge, button { font-family: var(--ff-ui); font-size: 0.8rem; font-weight: 500; }
+.verse-num { font-family: var(--ff-ui); font-size: 0.75rem; }

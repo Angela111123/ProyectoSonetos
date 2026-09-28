@@ -1,0 +1,34 @@
+:root {
+  --bg: #12151c;
+  --surface: #1a1e29;
+  --border: #282e3d;
+  --text: #f0e6e8;
+  --muted: #8e95a5;
+  --accent: #e03652;
+  --accent-bg: rgba(224, 54, 82, 0.12);
+}
+
+body { background: var(--bg); color: var(--text); }
+.app-header h1, .sonnet-title, .gallery-title { color: var(--accent); }
+.app-header p, .gallery-author, .sonnet-author, .verse-num { color: var(--muted); }
+
+.gallery-btn, .sonnet-card, #btn-back, .font-sizer button {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+.gallery-btn:hover, #btn-back:hover, .font-sizer button:hover {
+  border-color: var(--accent);
+}
+
+.stanza.is-focused {
+  border-left: 3px solid var(--accent);
+  background: var(--accent-bg);
+}
+
+.stanza-badge {
+  color: var(--accent);
+  background: rgba(224, 54, 82, 0.1);
+}
